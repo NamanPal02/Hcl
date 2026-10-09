@@ -1,0 +1,32 @@
+
+package abstarction;
+
+interface A {
+    void m1();
+}
+
+interface B {
+    void m2();
+}
+
+class C implements A, B {
+
+    @Override
+    public void m1() {
+        System.out.println("Interface A");
+    }
+
+    @Override
+    public void m2() {
+        System.out.println("Interface B");
+    }
+}
+
+public class muinheritance {
+    public static void main(String[] args) {
+        C obj = new C();
+
+        obj.m1();
+        obj.m2();
+    }
+}
