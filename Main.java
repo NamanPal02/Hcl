@@ -1,0 +1,14 @@
+class Student {
+    void display() {
+        System.out.println("I am Student");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.display();
+
+        System.out.println("I am Main");
+    }
+}
