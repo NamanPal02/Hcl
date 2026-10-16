@@ -1,0 +1,8 @@
+package org.example.constructorDI;
+
+public class Address {
+    public void getAddress(){
+        System.out.println("New aryanagar, Ghaziabad");
+    }
+}
+
