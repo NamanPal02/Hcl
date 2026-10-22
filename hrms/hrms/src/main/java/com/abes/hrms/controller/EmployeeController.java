@@ -15,8 +15,14 @@ public class EmployeeController {
         return "<h2 style = 'color:red'>Welcome to NamanHcl App";
     }
     @GetMapping("/add")
-    public int sum(int a, int b){
-        int result = demoEmployee.add(20,50);
+    public int sum(){
+        System.out.println("inside /add controller point");
+        int result = demoEmployee.add();
+        System.out.println("result from model :" + result);
         return result;
+    }
+    @GetMapping("/sqrt")
+    public double getSquareRoot(){
+        return demoEmployee.squareRoot();
     }
 }
