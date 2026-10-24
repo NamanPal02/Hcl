@@ -1,5 +1,5 @@
-package com.abesproject.hclhrms.controller;
 
+package com.abesproject.hclhrms.controller;
 
 import com.abesproject.hclhrms.EmployeeServiceImp;
 import com.abesproject.hclhrms.entity.Employee;
@@ -11,26 +11,27 @@ import java.util.List;
 
 @RestController
 public class EmployeeController {
+
     @Autowired
     private EmployeeServiceImp employeeServiceImp;
 
     @GetMapping("/")
-    public String welcomeMsg(){
+    public String welcomeMsg() {
         return "Welcomme to ABES HRMS";
     }
 
     @GetMapping("/addemp")
-    public String addnewEmployee(){
+    public String addnewEmployee() {
         return employeeServiceImp.addEmp();
     }
 
     @GetMapping("/getemp")
-        public List<Employee> getEmployee(){
-            return employeeServiceImp.getEmp();
-        }
+    public List<Employee> getEmployee() {
+        return employeeServiceImp.getEmp();
+    }
 
-    @GetMapping ("/getempbyid")
-    public Employee getEmpById(){
-            return employeeServiceImp.getEmpById(2001);
+    @GetMapping("/getempbyid")
+    public Employee getEmpById() {
+        return employeeServiceImp.getEmpById(2001);
     }
 }
