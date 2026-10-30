@@ -1,0 +1,21 @@
+NOVA HRMS - FRONTEND REFRESH
+
+What changed:
+- Updated the frontend branding to NOVA HRMS.
+- Reworked the visual theme with a forest-green palette, cleaner cards, updated navigation, tables, forms, and login screen.
+- Kept the existing React screens and frontend API request paths/payloads intact.
+- Kept the existing Vite setup and dependencies.
+
+Backend:
+- The hrmsdatabase folder is included unchanged from the supplied archive.
+- No Java, Maven, Spring Boot, controller, service, repository, model, or application.properties files were modified.
+
+Run:
+1. Start MySQL.
+2. Open hrmsdatabase in IntelliJ and run HrmsdatabaseApplication.
+3. In hrmsfrontend, run: npm install
+4. Then run: npm run dev
+5. Open http://localhost:5173
+
+The frontend still expects the backend at http://localhost:8080/api.
+Demo login details remain the same as README_LOGIN.txt.
